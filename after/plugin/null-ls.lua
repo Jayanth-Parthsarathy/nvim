@@ -1,28 +1,38 @@
-require("mason-null-ls").setup({
-    ensure_installed = { "stylua", "black", "prettier", "gofmt", "clang-format", "rustfmt", "shfmt" },
-})
+local setup, null_ls = pcall(require, "null-ls")
+if not setup then
+	return
+end
 
-local null_ls = require("null-ls")
-local blt = null_ls.builtins
+local formatting = null_ls.builtins.formatting -- to setup formatters
+local diagnostics = null_ls.builtins.diagnostics -- to setup linters
+
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 null_ls.setup({
-    on_attach = on_attach,
-    capabilities = capabilities,
-    autostart = true,
-    sources = {
-        blt.formatting.stylua.with({
-            extra_args = { "--config-path", vim.fs.normalize("~/.config/.stylua.toml") },
-        }),
-        blt.formatting.black.with({ args = { "--quiet", "-" } }),
-        blt.formatting.prettier,
-        blt.formatting.gofmt,
-        blt.formatting.clang_format,
-        blt.formatting.rustfmt,
-        blt.formatting.shfmt,
-        -- blt.formatting.goimports,
-        -- blt.formatting.gofumpt,
-        -- blt.formatting.isort,
-        -- blt.formatting.shfmt,
-    },
+	sources = {
+		formatting.prettier,
+		formatting.stylua,
+		diagnostics.eslint_d.with({
+			condition = function(utils)
+				return utils.root_has_file(".eslintrc.js")
+			end,
+		}),
+	},
+	on_attach = function(current_client, bufnr)
+		if current_client.supports_method("textDocument/formatting") then
+			vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+			vim.api.nvim_create_autocmd("BufWritePre", {
+				group = augroup,
+				buffer = bufnr,
+				callback = function()
+					vim.lsp.buf.format({
+						filter = function(client)
+							return client.name == "null-ls"
+						end,
+						bufnr = bufnr,
+					})
+				end,
+			})
+		end
+	end,
 })
-vim.cmd('map <Leader>lf :LspZeroFormat<CR>')
