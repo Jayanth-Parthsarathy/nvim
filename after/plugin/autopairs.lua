@@ -2,6 +2,7 @@ local autopairs_setup, autopairs = pcall(require, "nvim-autopairs")
 if not autopairs_setup then
 	return
 end
+local function helo(ij) end
 
 autopairs.setup({
 	check_ts = true,
