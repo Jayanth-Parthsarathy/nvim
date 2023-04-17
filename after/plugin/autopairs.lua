@@ -24,3 +24,4 @@ if not cmp_setup then
 end
 
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
+require("nvim-ts-autotag").setup()
