@@ -1,2 +1,2 @@
-require("jayanth.set")
-require("jayanth.remap")
+require("jayanth.options")
+require("jayanth.remaps")
