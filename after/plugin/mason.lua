@@ -12,19 +12,34 @@ local mason_null_ls_status, mason_null_ls = pcall(require, "mason-null-ls")
 if not mason_null_ls_status then
 	return
 end
-mason.setup()
+
+local servers = {
+	"tsserver",
+	"html",
+	"cssls",
+	"tailwindcss",
+	"lua_ls",
+	"emmet_ls",
+	"rust_analyzer",
+	"pyright",
+}
+
+local settings = {
+	ui = {
+		border = "none",
+		icons = {
+			package_installed = "◍",
+			package_pending = "◍",
+			package_uninstalled = "◍",
+		},
+	},
+	log_level = vim.log.levels.INFO,
+	max_concurrent_installers = 4,
+}
+mason.setup(settings)
 
 mason_lspconfig.setup({
-	ensure_installed = {
-		"tsserver",
-		"html",
-		"cssls",
-		"tailwindcss",
-		"lua_ls",
-		"emmet_ls",
-		"rust_analyzer",
-		"pyright",
-	},
+	ensure_installed = servers,
 	automatic_installation = true,
 })
 
