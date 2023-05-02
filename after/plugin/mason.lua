@@ -7,6 +7,10 @@ local servers = {
 	"bashls",
 	"jsonls",
 	"yamlls",
+	"prismals",
+	"cmake",
+	"clangd",
+	"tailwindcss",
 }
 
 local settings = {

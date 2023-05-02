@@ -43,6 +43,9 @@ nvim_tree.setup({
 			},
 		},
 	},
+	filters = {
+		dotfiles = false,
+	},
 	diagnostics = {
 		enable = true,
 		show_on_dirs = true,
