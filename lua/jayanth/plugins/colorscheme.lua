@@ -6,4 +6,5 @@ return {
 	{ "rose-pine/neovim", name = "rose-pine" },
 	"maxmx03/solarized.nvim",
 	"sainnhe/gruvbox-material",
+
 }
