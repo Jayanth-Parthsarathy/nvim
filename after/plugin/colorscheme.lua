@@ -1,1 +1,1 @@
-vim.cmd.colorscheme("radium")
+vim.cmd.colorscheme("ayu-dark")

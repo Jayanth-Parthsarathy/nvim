@@ -12,7 +12,6 @@ local servers = {
 	"clangd",
 	"tailwindcss",
 	"rust_analyzer",
-	"denols",
 }
 
 local settings = {
