@@ -1,1 +1,1 @@
-vim.cmd.colorscheme("ayu-dark")
+vim.cmd.colorscheme("rose-pine")
