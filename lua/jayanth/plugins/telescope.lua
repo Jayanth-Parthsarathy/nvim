@@ -2,5 +2,5 @@ return {
 	"nvim-telescope/telescope.nvim",
 	tag = "0.1.1",
 	-- or                              , branch = '0.1.1',
-	dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope-media-files.nvim" },
+	dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope-media-files.nvim", "nvim-telescope/telescope-project.nvim" },
 }

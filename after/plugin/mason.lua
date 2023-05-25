@@ -1,4 +1,6 @@
 local servers = {
+	"docker_compose_language_service",
+	"dockerls",
 	"lua_ls",
 	"cssls",
 	"html",
@@ -12,6 +14,8 @@ local servers = {
 	"clangd",
 	"tailwindcss",
 	"rust_analyzer",
+	"gopls",
+	"golangci_lint_ls",
 }
 
 local settings = {
