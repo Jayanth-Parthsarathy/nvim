@@ -37,6 +37,7 @@
   "nvterm": { "branch": "main", "commit": "5ae78fb332e92447121d2af58a6313189a7799fb" },
   "plenary.nvim": { "branch": "master", "commit": "52544825d6b8be677eb395983515ad5e30ae1f2e" },
   "presence.nvim": { "branch": "main", "commit": "87c857a56b7703f976d3a5ef15967d80508df6e6" },
+  "pywal.nvim": { "branch": "main", "commit": "d11b673c0e3d6eb8cbee7ea8cf4a8911f6ee24b9" },
   "rose-pine": { "branch": "main", "commit": "2eace84d649d76d41dcd44a87a17f64c7c4a586d" },
   "solarized.nvim": { "branch": "main", "commit": "7357e0e366c8360f90bb43a3ead9d7744e65de04" },
   "telescope-media-files.nvim": { "branch": "master", "commit": "0826c7a730bc4d36068f7c85cf4c5b3fd9fb570a" },
