@@ -13,7 +13,7 @@ return {
           desc = "Eval",
           mode = { "n",
             "v" }
-        },
+        }, dap
       },
 			opts = {},
 			config = function(_, opts)
@@ -57,7 +57,7 @@ return {
 				-- online, please don't ask me how to install them :)
 				ensure_installed = {
 					-- Update this to ensure that you have the debuggers for the langs you want
-          "codelldb",
+					"codelldb",
 					"python",
 					"delve",
 				},
@@ -66,6 +66,11 @@ return {
 		{
 			"leoluz/nvim-dap-go",
 			ft = "go",
+			config = true,
+		},
+		{
+			"mfussenegger/nvim-dap-python",
+			ft = "python",
 			config = true,
 		},
 	},

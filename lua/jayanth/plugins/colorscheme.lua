@@ -6,6 +6,21 @@ return {
 	opts = {},
 	config = function()
 		require("catppuccin").setup({
+			custom_highlights = function(colors)
+				return {
+					Comment = { fg = colors.flamingo },
+					["@variable"] = { fg = colors.yellow },
+					CmpBorder = { fg = colors.surface2 },
+					Pmenu = { bg = colors.none },
+				}
+			end,
+			color_overrides = {
+				mocha = {
+					base = "#000000",
+					mantle = "#000000",
+					crust = "#000000",
+				},
+			},
 			integrations = {
 				cmp = true,
 				gitsigns = true,
