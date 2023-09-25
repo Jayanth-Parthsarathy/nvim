@@ -68,11 +68,6 @@ return {
 			ft = "go",
 			config = true,
 		},
-		{
-			"mfussenegger/nvim-dap-python",
-			ft = "python",
-			config = true,
-		},
 	},
 	keys = {
 		{
