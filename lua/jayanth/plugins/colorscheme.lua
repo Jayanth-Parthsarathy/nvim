@@ -1,61 +1,25 @@
 return {
-	"catppuccin/nvim",
-	name = "catppuccin",
-	priority = 1000,
+	"RRethy/nvim-base16",
 	lazy = false,
-	opts = {},
+	priority = 1000,
 	config = function()
-		require("catppuccin").setup({
-			custom_highlights = function(colors)
-				return {
-					Comment = { fg = colors.flamingo },
-					["@variable"] = { fg = colors.yellow },
-					CmpBorder = { fg = colors.surface2 },
-					Pmenu = { bg = colors.none },
-				}
-			end,
-			color_overrides = {
-				mocha = {
-					base = "#000000",
-					mantle = "#000000",
-					crust = "#000000",
-				},
-			},
-			integrations = {
-				cmp = true,
-				gitsigns = true,
-				nvimtree = true,
-				telescope = {
-					enabled = true,
-					style = "nvchad",
-				},
-				treesitter = true,
-				notify = true,
-				mini = true,
-				native_lsp = {
-					enabled = true,
-					virtual_text = {
-						errors = { "italic" },
-						hints = { "italic" },
-						warnings = { "italic" },
-						information = { "italic" },
-					},
-					underlines = {
-						errors = { "underline" },
-						hints = { "underline" },
-						warnings = { "underline" },
-						information = { "underline" },
-					},
-					inlay_hints = {
-						background = true,
-					},
-				},
-				indent_blankline = {
-					enabled = true,
-					colored_indent_levels = false,
-				},
-			},
+		require("base16-colorscheme").setup({
+			base00 = "#000000",
+			base01 = "#3c3836",
+			base02 = "#504945",
+			base03 = "#665c54",
+			base04 = "#bdae93",
+			base05 = "#d5c4a1",
+			base06 = "#ebdbb2",
+			base07 = "#fbf1c7",
+			base08 = "#fb4934",
+			base09 = "#fe8019",
+			base0A = "#fabd2f",
+			base0B = "#b8bb26",
+			base0C = "#8ec07c",
+			base0D = "#83a598",
+			base0E = "#d3869b",
+			base0F = "#d65d0e",
 		})
-		vim.cmd([[colorscheme catppuccin]])
 	end,
 }

@@ -1,7 +1,7 @@
 return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
-	event = { "BufReadPre", "BufNewFile" },
+	event = { "BufReadPre", "BufNewFile", "InsertEnter" },
 	config = function()
 		local status_ok, lualine = pcall(require, "lualine")
 		if not status_ok then
