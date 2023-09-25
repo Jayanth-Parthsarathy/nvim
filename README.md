@@ -1,4 +1,4 @@
-# nvim
+# nvim/
 
 <a href="https://dotfyle.com/Jayanth-Parthsarathy/nvim"><img src="https://dotfyle.com/Jayanth-Parthsarathy/nvim/badges/plugins?style=flat" /></a>
 <a href="https://dotfyle.com/Jayanth-Parthsarathy/nvim"><img src="https://dotfyle.com/Jayanth-Parthsarathy/nvim/badges/leaderkey?style=flat" /></a>
@@ -26,7 +26,7 @@ NVIM_APPNAME=Jayanth-Parthsarathy/nvim/ nvim
 
 ### colorscheme
 
-+ [catppuccin/nvim](https://dotfyle.com/plugins/catppuccin/nvim)
++ [RRethy/nvim-base16](https://dotfyle.com/plugins/RRethy/nvim-base16)
 ### comment
 
 + [numToStr/Comment.nvim](https://dotfyle.com/plugins/numToStr/Comment.nvim)
@@ -40,6 +40,7 @@ NVIM_APPNAME=Jayanth-Parthsarathy/nvim/ nvim
 + [mfussenegger/nvim-dap](https://dotfyle.com/plugins/mfussenegger/nvim-dap)
 ### editing-support
 
++ [folke/zen-mode.nvim](https://dotfyle.com/plugins/folke/zen-mode.nvim)
 + [windwp/nvim-autopairs](https://dotfyle.com/plugins/windwp/nvim-autopairs)
 ### fuzzy-finder
 
