@@ -1,4 +1,4 @@
-# nvim/
+# nvim
 
 <a href="https://dotfyle.com/Jayanth-Parthsarathy/nvim"><img src="https://dotfyle.com/Jayanth-Parthsarathy/nvim/badges/plugins?style=flat" /></a>
 <a href="https://dotfyle.com/Jayanth-Parthsarathy/nvim"><img src="https://dotfyle.com/Jayanth-Parthsarathy/nvim/badges/leaderkey?style=flat" /></a>
