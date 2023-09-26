@@ -1,12 +1,16 @@
 # nvim
 ## Screenshots 📸
-<img src="https://imgur.com/DDAF69o.png" />
+### Preview #1
+<img src="https://imgur.com/zo4WidE.png" />
 
-<img src="https://imgur.com/UU5MKYC.png" />
+### Preview #2
+<img src="https://imgur.com/9p8X5F3.png" />
 
-<img src="https://imgur.com/UYBYFLd.png" /> 
+### Preview #3
+<img src="https://imgur.com/vb8VdAD.png" /> 
 
-<img src="https://imgur.com/ZbOzOTU.png" />
+### Preview #4
+<img src="https://imgur.com/WcC7H1R.png" /> 
 
 <a href="https://dotfyle.com/Jayanth-Parthsarathy/nvim"><img src="https://dotfyle.com/Jayanth-Parthsarathy/nvim/badges/plugins?style=flat" /></a>
 <a href="https://dotfyle.com/Jayanth-Parthsarathy/nvim"><img src="https://dotfyle.com/Jayanth-Parthsarathy/nvim/badges/leaderkey?style=flat" /></a>
