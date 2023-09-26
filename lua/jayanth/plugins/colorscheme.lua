@@ -8,6 +8,7 @@ return {
 			if vim.fn.exists("syntax_on") and vim.g.colors_name == "gruvbox" then
 				if vim.o.background == "dark" then
 					vim.cmd("hi Normal guibg=#0a0a0a")
+					vim.cmd("hi SignColumn guibg=#0a0a0a")
 				end
 			end
 		end,
