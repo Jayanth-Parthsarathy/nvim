@@ -37,9 +37,6 @@ NVIM_APPNAME=Jayanth-Parthsarathy/nvim/ nvim
 
 ## Plugins
 
-### colorscheme
-
-+ [RRethy/nvim-base16](https://dotfyle.com/plugins/RRethy/nvim-base16)
 ### comment
 
 + [numToStr/Comment.nvim](https://dotfyle.com/plugins/numToStr/Comment.nvim)
@@ -83,6 +80,9 @@ NVIM_APPNAME=Jayanth-Parthsarathy/nvim/ nvim
 ### snippet
 
 + [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
+### startup
+
++ [goolord/alpha-nvim](https://dotfyle.com/plugins/goolord/alpha-nvim)
 ### statusline
 
 + [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
