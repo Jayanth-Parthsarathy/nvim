@@ -1,16 +1,13 @@
 return {
 	{
-		"morhetz/gruvbox",
+		"luisiacc/gruvbox-baby",
 		lazy = false,
 		priority = 1000,
 		config = function()
-      vim.cmd([[colorscheme gruvbox]])
-			if vim.fn.exists("syntax_on") and vim.g.colors_name == "gruvbox" then
-				if vim.o.background == "dark" then
-					vim.cmd("hi Normal guibg=#0a0a0a")
-					vim.cmd("hi SignColumn guibg=#0a0a0a")
-				end
-			end
+			vim.g.gruvbox_baby_background_color = "dark"
+			vim.g.gruvbox_baby_highlights = { Normal = { bg = "#1d2021" } }
+			vim.g.gruvbox_baby_telescope_theme = 1
+			vim.cmd([[colorscheme gruvbox-baby]])
 		end,
 	},
 }

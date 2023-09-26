@@ -41,15 +41,8 @@ return {
 		"ThePrimeagen/git-worktree.nvim",
 	},
 	config = function()
-		local telescope = require("telescope").setup({
-			defaults = {
-
-				prompt_prefix = " ",
-				selection_caret = " ",
-				path_display = { "smart" },
-			},
-		})
-		require("telescope").load_extension("fzf")
-		require("telescope").load_extension("git_worktree")
+		local telescope  =require("telescope")
+		telescope.load_extension("fzf")
+		telescope.load_extension("git_worktree")
 	end,
 }
