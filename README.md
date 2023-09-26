@@ -4,13 +4,13 @@
 <img src="https://imgur.com/zo4WidE.png" />
 
 ### Preview #2
-<img src="https://imgur.com/9p8X5F3.png" />
+<img src="https://imgur.com/HuwLy1K.png" />
 
 ### Preview #3
-<img src="https://imgur.com/vb8VdAD.png" /> 
+<img src="https://imgur.com/FVGkpkr.png" /> 
 
 ### Preview #4
-<img src="https://imgur.com/WcC7H1R.png" /> 
+<img src="https://imgur.com/oqwCqxv.png" /> 
 
 <a href="https://dotfyle.com/Jayanth-Parthsarathy/nvim"><img src="https://dotfyle.com/Jayanth-Parthsarathy/nvim/badges/plugins?style=flat" /></a>
 <a href="https://dotfyle.com/Jayanth-Parthsarathy/nvim"><img src="https://dotfyle.com/Jayanth-Parthsarathy/nvim/badges/leaderkey?style=flat" /></a>
