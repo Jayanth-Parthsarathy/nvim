@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "jayanth.plugins" }, { import = "jayanth.plugins.lsp" } }, {
   install = {
-    colorscheme = { "ayu" },
+    colorscheme = { "catppuccin" },
   },
   checker = {
     enabled = true,

@@ -22,12 +22,8 @@ keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
-
 -- Close splits --
 keymap("n", "<C-x>", ":close <CR>", opts)
-
--- Format file --
-keymap("n", "<leader>lf", "<cmd>Format<CR>", opts)
 
 -- Remove highlights --
 keymap("n", "<leader>nh", "<cmd>noh<CR>", opts)
@@ -36,11 +32,9 @@ keymap("n", "<leader>nh", "<cmd>noh<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
-
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
-
 
 -- Visual --
 -- Stay in indent mode
@@ -56,4 +50,3 @@ keymap("v", "p", '"_dP', opts)
 -- Move text up and down
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
-
