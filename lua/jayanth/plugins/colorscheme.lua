@@ -1,20 +1,13 @@
 return {
-  -- {
-  -- 	"catppuccin/nvim",
-  -- 	lazy = false,
-  -- 	priority = 1000,
-  --    name = "catppuccin",
-  -- 	config = function()
-  -- 		vim.cmd([[colorscheme catppuccin]])
-  -- 	end,
-  -- },
   {
-    "folke/tokyonight.nvim",
+    "luisiacc/gruvbox-baby",
     lazy = false,
     priority = 1000,
-    opts = {},
     config = function()
-      vim.cmd([[colorscheme tokyonight-night]])
+      vim.g.gruvbox_baby_background_color = "dark"
+      vim.g.gruvbox_baby_highlights = { Normal = { bg = "#1d2021" } }
+      vim.g.gruvbox_baby_telescope_theme = 1
+      vim.cmd([[colorscheme gruvbox-baby]])
     end,
   },
 }
